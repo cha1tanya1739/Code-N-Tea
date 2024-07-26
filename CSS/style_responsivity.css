@@ -1,0 +1,143 @@
+@media all and (pointer:coarse) {
+    #cursor {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1161px) {
+    #logo a:last-child {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    #links {
+        display: none;
+    }
+    #logo a:last-child {
+        display: block;
+    }
+    .menu {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #links {
+        display: none;
+    }
+    #logo a:last-child {
+        display: none;
+    }
+    .menu {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    nav,
+    #home,
+    #why-us,
+    #our-courses,
+    #our-projects,
+    #loader,
+    #context-menu,
+    #theme-button,
+    footer {
+        display: none;
+    }
+    #unavailability {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1530px) {
+    #home-content-img img {
+        height: 300px;
+        width: 300px;
+    }
+    #home-content-text {
+        width: 1000px;
+    }
+}
+
+@media screen and (max-width: 1370px) {
+    #home-content-img img {
+        height: 275px;
+        width: 275px;
+    }
+    #home-content-text {
+        width: 900px;
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    #home-content-img img {
+        height: 275px;
+        width: 275px;
+    }
+    #home-content-text {
+        width: 800px;
+    }
+    #home-content-text h1 {
+        padding-bottom: 20px;
+        font-size: 35px;
+    }
+    #home-content-text p {
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    #home {
+        height: 140vh;
+    }
+    #home-content {
+        flex-wrap: wrap;
+        padding-top: 10px;
+    }
+    #home-content-text h1 {
+        margin-left: 175px;
+        font-size: 40px;
+    }
+    #home-content-text {
+        width: 800px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    #home-content-text h1 {
+        margin-left: 140px;
+    }
+    #home-content-text {
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    #home-content-text h1 {
+        margin-left: 65px;
+    }
+    #home-content-text {
+        width: 625px;
+    }
+    .login-inf-scroll ul,
+    .signup-inf-scroll ul {
+        gap: 100px;
+    }
+    @keyframes scroll-left {
+        to {
+            transform: translateX(calc(-100% - 100px));
+        }
+    }
+    @keyframes scroll-right-reverse {
+        from {
+            transform: translateX(calc(-100% - 100px));
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+}
