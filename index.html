@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo_old.png" type="image/png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_responsivity.css">
+    <link rel="stylesheet" href="index_responsivity.css">
+    <script defer src="custom_cursor.js"></script>
+    <script defer src="context_menu.js"></script>
+    <script defer src="context_tools.js"></script>
+    <script defer src="theme_switcher.js"></script>
+    <script defer src="responsive.js"></script>
+    <script defer src="sidebar.js"></script>
+    <title>Code 'N' Tea | By Chaitanya Dev Bhardwaj</title>
+</head>
+
+<body class="light-theme">
+    <div id="loader">
+        <h1>Code 'N' Tea</h1>
+    </div>
+    <div id="unavailability">
+        <p>Sorry, your device isn't compatible with our website.</p>
+    </div>
+    <div id="context-menu">
+        <div>
+            <button class="context-menu-button" onclick="refresh()">Reload</button>
+        </div>
+        <hr>
+        <div>
+            <button class="context-menu-button" onclick="copy_page_address()">Copy page address</button>
+        </div>
+    </div>
+    <nav>
+        <div id="logo">
+            <a href="index.html"><img src="logo_old.png" alt="logo" id="nav-main-img"></a>
+            <a href="index.html">Code 'N' Tea</a>
+        </div>
+        <div class="menu" onclick="openNav()">
+            <div id="bars">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" id="closebtn">&times;</a>
+            <div class="links">
+                <a href="#home" class="sidebar-anchors">Home</a>
+                <a href="#why-us" class="sidebar-anchors">Why Us</a>
+                <a href="#our-projects" class="sidebar-anchors">Projects</a>
+                <a href="#our-courses" class="sidebar-anchors">Courses</a>
+            </div>
+        </div>
+    </nav>
+    <button id="theme-button">
+        <img src="theme.png" alt="theme" id="theme_img">
+    </button>
+    <div id="home">
+        <div id="home-content">
+            <div id="home-content-img">
+                <img src="dev.jpg" alt="">
+            </div>
+            <div id="home-content-text">
+                <h1>Code 'N' Tea</h1>
+                <p>
+                    As a software developer, I constantly embrace innovation and adaptability. Our field evolves
+                    rapidly, necessitating continuous learning and adaptation. Success hinges on teamwork,
+                    problem-solving, and a customer-centric mindset. Each line of code is crafted
+                    with precision and purpose, aimed at enhancing user experience. We strive to stay ahead by
+                    leveraging cutting-edge technologies, ensuring our solutions remain robust, scalable, and 
+                    impactful in an ever-changing digital landscape.
+                </p>
+            </div>
+        </div>
+        <div class="login-inf-scroll">
+            <ul aria-hidden="true">
+                <li><a href="login.html"><span>Login</span></a></li>
+                <li><a href="login.html"><span>Login</span></a></li>
+                <li><a href="login.html"><span>Login</span></a></li>
+                <li><a href="login.html"><span>Login</span></a></li>
+                <li><a href="login.html"><span>Login</span></a></li>
+                <li><a href="login.html"><span>Login</span></a></li>
+                <li><a href="login.html"><span>Login</span></a></li>
+                <li><a href="login.html"><span>Login</span></a></li>
+            </ul>
+
+            <ul aria-hidden="true">
+                <li><a href="login.html"><span>Login</span></a></li>
+                <li><a href="login.html"><span>Login</span></a></li>
+                <li><a href="login.html"><span>Login</span></a></li>
+                <li><a href="login.html"><span>Login</span></a></li>
+                <li><a href="login.html"><span>Login</span></a></li>
+                <li><a href="login.html"><span>Login</span></a></li>
+                <li><a href="login.html"><span>Login</span></a></li>
+                <li><a href="login.html"><span>Login</span></a></li>
+            </ul>
+        </div>
+        <div class="signup-inf-scroll">
+            <ul aria-hidden="true">
+                <li><a href="signup.html"><span>Sign-Up</span></a></li>
+                <li><a href="signup.html"><span>Sign-Up</span></a></li>
+                <li><a href="signup.html"><span>Sign-Up</span></a></li>
+                <li><a href="signup.html"><span>Sign-Up</span></a></li>
+                <li><a href="signup.html"><span>Sign-Up</span></a></li>
+                <li><a href="signup.html"><span>Sign-Up</span></a></li>
+                <li><a href="signup.html"><span>Sign-Up</span></a></li>
+                <li><a href="signup.html"><span>Sign-Up</span></a></li>
+            </ul>
+
+            <ul aria-hidden="true">
+                <li><a href="signup.html"><span>Sign-Up</span></a></li>
+                <li><a href="signup.html"><span>Sign-Up</span></a></li>
+                <li><a href="signup.html"><span>Sign-Up</span></a></li>
+                <li><a href="signup.html"><span>Sign-Up</span></a></li>
+                <li><a href="signup.html"><span>Sign-Up</span></a></li>
+                <li><a href="signup.html"><span>Sign-Up</span></a></li>
+                <li><a href="signup.html"><span>Sign-Up</span></a></li>
+                <li><a href="signup.html"><span>Sign-Up</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="why-us">
+        <div class="area">
+            <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <h1>Why Choose Us?</h2>
+            <p>
+                Our curriculum is crafted by experienced professionals who bring their extensive expertise and passion
+                for web development to the classroom. These instructors are not just teachers but mentors who have
+                worked on various high-profile projects and understand
+                the nuances of the web development landscape. They are dedicated to sharing their knowledge and
+                insights, helping students grasp complex ideas with ease. We pride ourselves on creating a supportive
+                and collaborative learning environment.
+            </p>
+    </div>
+    <div id="our-projects">
+        <div class="card ">
+            <a href="https://cha1tanya1739.github.io/Web-Calculator" class="card-image" target="_blank"><img
+                    src="web-calculator.png" alt="project1"></a>
+            <a href="https://cha1tanya1739.github.io/Web-Calculator" class="card-text" target="_blank">
+                <h2>Web Calculator</h2>
+                <p>A web calculator app built using HTML, CSS and JS.</p>
+            </a>
+        </div>
+        <div class="card card-rev">
+            <a href="" class="card-image"><img src="card.jpg" alt="project1"></a>
+            <a href="" class="card-text">
+                <h2>Portfolio</h2>
+                <p>A personal portfolio website built using HTML, CSS and JS.</p>
+            </a>
+        </div>
+        <div class="card">
+            <a href="" class="card-image"><img src="card.jpg" alt="project1"></a>
+            <a href="" class="card-text">
+                <h2>AI Chat-Bot</h2>
+                <p>An AI chat-bot built using Python and JSON.</p>
+            </a>
+        </div>
+    </div>
+    <div id="our-courses">
+        <div class="course-card">
+            <div class="course-image">
+                <a href="">
+                    <img src="html.png" alt="">
+                </a>
+            </div>
+            <a href="">
+                <h2>HTML</h2>
+                <p>
+                    Our HTML course introduces the fundamentals of web structure, enabling students to build and design
+                    web pages from scratch. Through hands-on projects, students learn to create well-structured,
+                    semantic web content, essential for any web development career.
+                    Emphasis is placed on proper coding practices, accessibility, and the foundational skills necessary
+                    for more advanced web technologies.
+                </p>
+            </a>
+        </div>
+        <div class="course-card">
+            <div class="course-image">
+                <a href="">
+                    <img src="css.png" alt="">
+                </a>
+            </div>
+            <a href="">
+                <h2>CSS</h2>
+                <p>
+                    The CSS course delves into styling and layout techniques, allowing learners to create visually
+                    appealing and responsive designs. Students explore a variety of topics including selectors, box
+                    model, flexbox, grid, and animations. Practical exercises ensure
+                    mastery in transforming basic HTML into engaging, professional web pages. The course equips students
+                    with the skills to enhance user experience through effective design.
+                </p>
+            </a>
+        </div>
+        <div class="course-card">
+            <div class="course-image">
+                <a href="">
+                    <img src="java.png" alt="">
+                </a>
+            </div>
+            <a href="">
+                <h2>Java</h2>
+                <p>
+                    Our Java course focuses on enterprise-level applications, teaching robust programming principles and
+                    object-oriented concepts. It covers syntax, data structures, algorithms, and software development
+                    methodologies. Through comprehensive projects, students
+                    gain experience in building scalable, high-performance applications. The course prepares learners
+                    for careers in software engineering, emphasizing best practices and industry standards in Java
+                    development.
+                </p>
+            </a>
+        </div>
+        <div class="course-card">
+            <div class="course-image">
+                <a href="">
+                    <img src="python.png" alt="">
+                </a>
+            </div>
+            <a href="">
+                <h2>Python</h2>
+                <p>
+                    The Python course highlights versatility, covering data analysis, web development, and automation
+                    with a focus on simplicity and readability. Students learn core programming concepts, libraries, and
+                    frameworks like Django and Flask. Practical projects
+                    enhance problem-solving skills and real-world application. This course is ideal for those seeking to
+                    leverage Python's extensive capabilities across various domains, including machine learning and
+                    scientific computing.
+                </p>
+            </a>
+        </div>
+    </div>
+    <div id="cursor"></div>
+    <footer>
+        <p>Not Registered</p>
+    </footer>
+</body>
+
+</html>

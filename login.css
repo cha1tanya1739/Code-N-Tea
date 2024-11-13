@@ -1,0 +1,103 @@
+#login-frame {
+    height: calc(100vh - 111px);
+    margin-top: 90px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#login-portal {
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#login-img {
+    border-radius: 25px;
+    width: 1200px;
+    height: 70vh;
+}
+
+#login-form {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 500px;
+    width: 650px;
+    margin-left: 50px;
+}
+
+#login-form h1 {
+    margin-bottom: -200px;
+    font-size: 50px;
+    color: white;
+}
+
+#login-form input {
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 50px;
+    width: 650px;
+    margin-bottom: 10px;
+    border: 3px solid white;
+    border-radius: 10px;
+    color: white;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+#login-button {
+    height: 50px;
+    width: 315px;
+    border: 3px solid white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 0px;
+    font-size: 18px;
+    margin-right: 4px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+#forgot-button {
+    height: 50px;
+    width: 315px;
+    border: 3px solid white;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 20px;
+    font-size: 18px;
+    margin-left: 4px;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+#login-button:hover,
+#forgot-button:hover,
+#signup-button:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+#signup-button {
+    height: 50px;
+    width: 650px;
+    border: 3px solid white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size: 18px;
+    margin-right: 4px;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-top: 10px;
+}
+
+#signup-button a {
+    color: black;
+    text-decoration: none;
+}

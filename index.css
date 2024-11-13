@@ -1,0 +1,439 @@
+#our-projects {
+    height: 100vh;
+}
+
+#home-content {
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+#home-content-img img {
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    border: 5px solid var(--secondary-color);
+}
+
+#home-content-img {
+    margin-right: 50px;
+}
+
+#home-content-text {
+    max-width: 1100px;
+    transition: 0.3s ease-in-out; /* Smooth transition */
+}
+
+#home-content-text h1 {
+    padding-bottom: 20px;
+    font-size: 40px;
+    animation: typing 2s steps(22) forwards 5.5s, blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    max-width: 270px; /* Changed from width to max-width for better animation */
+}
+
+.typing-demo {
+    width: 22ch;
+    font-size: 2em;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #home-content {
+        flex-direction: column;
+        padding-top: 50px;
+        text-align: center;
+    }
+    
+    #home-content-img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    #home-content-text h1 {
+        font-size: 32px;
+        max-width: 100%; /* Adjust max-width for smaller screens */
+    }
+}
+
+
+#home-content-text p {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#home-buttons {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+
+#home-buttons a {
+    height: 50px;
+    width: 125px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 25px;
+    background: var(--secondary-color);
+    background-color: transparent;
+    color: var(--secondary-color);
+    font-size: 24px;
+    margin-left: 70px;
+    margin-top: -45px;
+    text-decoration: none;
+    padding: 5px;
+    padding-left: 10px;
+}
+
+#home-buttons a:first-child {
+    padding-left: 15px;
+}
+
+#home-buttons a:hover {
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(90deg, rgb(0, 255, 255) 0%, rgb(55, 0, 255) 100%);
+    border: 2px solid rgb(0, 140, 255);
+}
+
+#our-projects {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow-y: hidden;
+}
+
+.card {
+    height: auto;
+    width: 400px;
+    margin-right: 20px;
+    margin-top: 100px;
+}
+
+.card img {
+    height: 500px;
+    width: 400px;
+    border: 3px solid var(--secondary-color);
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+
+.card h2,
+p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.card h2 {
+    margin-bottom: 3px;
+    font-size: 32px;
+}
+
+.card h2:hover {
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(90deg, rgb(0, 255, 255) 0%, rgb(55, 0, 255) 80%);
+}
+
+.card p {
+    font-size: 20px;
+    color: rgb(156, 156, 156);
+}
+
+.card a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+#our-courses {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 150vh;
+    flex-wrap: wrap;
+    padding-bottom: 0px;
+    overflow-y: hidden;
+}
+
+.course-card {
+    height: 450px;
+    width: 800px;
+    background-color: var(--primary-color);
+    display: flex;
+    border: 3px solid var(--secondary-color);
+    border-radius: 30px;
+    cursor: not-allowed;
+    margin-top: 100px;
+}
+
+.course-card a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    cursor: not-allowed;
+}
+
+.course-card a h2 {
+    font-size: 36px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 35px;
+    cursor: not-allowed;
+}
+
+.course-card a h2:hover {
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(90deg, rgb(0, 255, 255) 0%, rgb(55, 0, 255) 30%);
+}
+
+.course-card a h2:nth-last-child(-n + 3):hover {
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(90deg, rgb(0, 255, 255) 0%, rgb(55, 0, 255) 40%);
+}
+
+.course-card a p {
+    font-size: 18px;
+    padding-right: 50px;
+    cursor: not-allowed;
+}
+
+.course-image img {
+    height: 300px;
+    width: 300px;
+    cursor: not-allowed;
+}
+
+.course-image {
+    border: 2px solid red green blue;
+    border-right-color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    background: var(--third-color);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    cursor: not-allowed;
+}
+
+.login-inf-scroll,
+.signup-inf-scroll {
+    font-size: 32px;
+    padding-block: 8px;
+    border-block: 1px solid;
+    overflow: hidden;
+    user-select: none;
+    display: flex;
+    gap: 180px;
+}
+
+.login-inf-scroll::after,
+.signup-inf-scroll::after {
+    content: "H";
+}
+
+.login-inf-scroll {
+    margin-top: 100px;
+}
+
+.login-inf-scroll ul,
+.signup-inf-scroll ul {
+    list-style: none;
+    flex-shrink: 0;
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 180px;
+}
+
+.login-inf-scroll ul a,
+.signup-inf-scroll ul a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.login-inf-scroll ul {
+    animation: scroll-left 36s linear infinite;
+}
+
+.signup-inf-scroll ul {
+    animation: scroll-right-reverse 35s linear infinite;
+}
+
+.login-inf-scroll:hover ul,
+.signup-inf-scroll:hover ul {
+    animation-play-state: paused;
+}
+
+.signup-inf-scroll {
+    border-top: none;
+}
+
+.signup-inf-scroll:hover ul {
+    animation-play-state: paused;
+}
+
+@keyframes scroll-left {
+    to {
+        transform: translateX(calc(-100% - 180px));
+    }
+}
+
+@keyframes scroll-right-reverse {
+    from {
+        transform: translateX(calc(-100% - 180px));
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+#why-us {
+    position: relative;
+    height: 90vh;
+    width: 85vw;
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    left: 7.5vw;
+    border: 4px solid var(--secondary-color);
+    border-radius: 25px;
+    background-position: center;
+    background-size: cover;
+}
+
+#why-us-text {
+    position: relative;
+    z-index: 100; /* Ensure text is above animated circles */
+    text-align:center;
+}
+
+.area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary-color); /* Background color for the area */
+    z-index: 1;
+    overflow: hidden;
+}
+
+.circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.circles li {
+    position: absolute;
+    list-style: none;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: #ccc;
+    bottom: -150px;
+    animation: animate 25s linear infinite;
+}
+
+/* Styling and animation delay for each circle */
+.circles li:nth-child(1) { left: 25%; width: 80px; height: 80px; animation-delay: 0s; }
+.circles li:nth-child(2) { left: 10%; width: 20px; height: 20px; animation-delay: 2s; animation-duration: 12s; }
+.circles li:nth-child(3) { left: 70%; width: 20px; height: 20px; animation-delay: 4s; }
+.circles li:nth-child(4) { left: 40%; width: 60px; height: 60px; animation-delay: 0s; animation-duration: 18s; }
+.circles li:nth-child(5) { left: 65%; width: 20px; height: 20px; animation-delay: 0s; }
+.circles li:nth-child(6) { left: 75%; width: 110px; height: 110px; animation-delay: 3s; }
+.circles li:nth-child(7) { left: 35%; width: 150px; height: 150px; animation-delay: 7s; }
+.circles li:nth-child(8) { left: 50%; width: 25px; height: 25px; animation-delay: 15s; animation-duration: 45s; }
+.circles li:nth-child(9) { left: 20%; width: 15px; height: 15px; animation-delay: 2s; animation-duration: 35s; }
+.circles li:nth-child(10) { left: 85%; width: 150px; height: 150px; animation-delay: 0s; animation-duration: 11s; }
+
+@keyframes animate {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+    100% {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
+
+#why-us:hover {
+    animation-play-state: running;
+}
+
+#why-us:hover~#cursor {
+    background-color: white;
+}
+
+@keyframes background-transition {
+    from {
+        background-size: 100%;
+    }
+
+    to {
+        background-size: 200%;
+    }
+}
+
+#why-us::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: brightness(0.4);
+    z-index: 1;
+}
+
+#why-us h1,
+#why-us p {
+    position: relative;
+    z-index: 2;
+}
+
+#why-us h1 {
+    font-size: 50px;
+    padding-top: 75px;
+}
+
+#why-us p {
+    font-size: 25px;
+    margin-top: 75px;
+    margin-inline: 60px;
+}

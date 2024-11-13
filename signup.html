@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/signup.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="shortcut icon" href="../Assets/logo.png" type="image/png">
+    <script defer src="../Javascript/reveal.js"></script>
+    <script defer src="../Javascript/custom_cursor.js"></script>
+    <script defer src="../Javascript/context_menu.js"></script>
+    <script defer src="../Javascript/context_tools.js"></script>
+    <script defer src="../Javascript/theme_switcher.js"></script>
+    <title>Sign-Up | Code 'N' Tea | By Chaitanya Dev Bhardwaj</title>
+</head>
+
+<body class="light-theme">
+    <div id="cursor"></div>
+    <div id="loader">
+        <h1>
+            Code 'N' Tea
+        </h1>
+    </div>
+    <div id="context-menu">
+        <div>
+            <button class="context-menu-button" onclick="refresh()">Reload</button>
+        </div>
+        <hr>
+        <div>
+            <button class="context-menu-button" onclick="copy_page_address()">Copy page address</button>
+        </div>
+    </div>
+    <nav>
+        <div id="logo">
+            <a href="index.html"><img src="../Assets/logo.png" alt="logo"></a>
+            <a href="index.html">Code 'N' Tea</a>
+        </div>
+        <div id="links">
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="#why-us">Why Us</a></li>
+                <li><a href="index.html#our-projects">Our Projects</a></li>
+                <li><a href="index.html#our-courses">Courses</a></li>
+            </ul>
+        </div>
+    </nav>
+    <button id="theme-button">
+        <img src="../Assets/theme.png" alt="theme" id="theme_img">
+    </button>
+    <div id="signup-frame">
+        <div id="signup-portal">
+            <img src="../Assets/astronaut.jpg" alt="" id="signup-img">
+            <div id="signup-form">
+                <h1>Sign-Up</h1>
+                <form>
+                    <input type="name" name="name" id="name" placeholder="Name" required
+                        oninvalid="this.setCustomValidity('Please enter your name.')"
+                        oninput="this.setCustomValidity('')">
+                    <input type="number" name="age" id="age" placeholder="age" required
+                        oninvalid="this.setCustomValidity('Please enter your age.')"
+                        oninput="this.setCustomValidity('')">
+                    <input type="email" name="email" id="email" placeholder="Email" required
+                        oninvalid="this.setCustomValidity('Please enter your email address.')"
+                        oninput="this.setCustomValidity('')">
+                    <input type="password" name="password" id="password" placeholder="Password" required
+                        oninvalid="this.setCustomValidity('Please enter your password.')"
+                        oninput="this.setCustomValidity('')">
+                    <button type="submit" id="signup-button">Sign-Up</button>
+                    <button type="submit" id="login-button">
+                        <a href="login.html">
+                            Already have an account, login.
+                        </a>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Copyright &copy; codeNchai.com - Not Registered</p>
+    </footer>
+</body>
+
+</html>
